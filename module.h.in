@@ -1,0 +1,17 @@
+//  :copyright: (c) 2016 Oliver Kowalke.
+//  :copyright: (c) 2017-2018 Alex Huszagh.
+//  :license: Boost, see licenses/boost.md for more details.
+/**
+ *  \addtogroup PyCPP
+ *  \brief Context switching module.
+ */
+
+#pragma once
+
+#include <pycpp/context/continuation.h>
+#include <pycpp/context/fixedsize_stack.h>
+#include <pycpp/context/pooled_fixedsize_stack.h>
+#include <pycpp/context/protected_fixedsize_stack.h>
+#include <pycpp/context/segmented_stack.h>
+#include <pycpp/context/stack_context.h>
+#include <pycpp/context/stack_traits.h>
