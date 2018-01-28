@@ -5,7 +5,7 @@
 #pragma once
 
 #include <pycpp/context/config.h>
-#if defined(OS_WINDOWS)
+#if defined(PYCPP_WINDOWS)
 #   include <pycpp/context/windows/protected_fixedsize_stack.hpp>
 #else
 #   include <pycpp/context/posix/protected_fixedsize_stack.hpp>

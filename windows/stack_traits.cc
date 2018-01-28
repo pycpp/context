@@ -14,7 +14,7 @@
 // MACROS
 // ------
 
-#if defined(PROCESSOR_X8664)
+#if defined(PYCPP_X86_64)
 #   define MIN_STACKSIZE 8 * 1024
 #else
 #   define MIN_STACKSIZE 4 * 1024
