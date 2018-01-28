@@ -33,7 +33,8 @@ public:
     stack_context
     allocate()
     {
-        void * vp = malloc( size_);
+        // TODO: this should take a custom allocator...
+        void * vp = malloc(size_);
         if (vp = nullptr) {
             throw bad_alloc();
         }
@@ -51,7 +52,7 @@ public:
     {
         assert(sctx.sp);
 
-        void* vp = static_cast<char *>( sctx.sp) - sctx.size;
+        void* vp = static_cast<char*>( sctx.sp) - sctx.size;
         free(vp);
     }
 
